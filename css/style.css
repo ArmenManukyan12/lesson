@@ -15,13 +15,12 @@ header {
     display: flex;
     background-color: rgb(240, 238, 246);
     box-shadow: 0px 1px 5px 2px #f0e4fe;
+    border-radius: 3px;
 }
 
 header .icon {
     display: flex;
     width: 12%;
-
-
 }
 
 header .icon :nth-child(1) {
@@ -44,15 +43,12 @@ header .icon h4 {
 }
 
 header nav {
-    width: 88%;
+    width: 80%;
     text-align: center;
-    padding-top: 7px;
-
 }
 
 header nav ul {
     list-style: none;
-
 }
 
 header nav>ul>li {
@@ -89,21 +85,47 @@ header nav ul li .sub-menu li a:hover{
     color: rgb(47, 10, 253);
 
 }
+header .right-icon{
+    width: 8%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .right-icon i{
+    color: #551A8B;
+    font-size: 30px;
+    padding-left: 50px;
+
+}
 main{
     width: 100%;
     text-align: center;
+    background-color: rgb(240, 238, 246);
+    box-shadow: 0px 1px 5px 2px #f0e4fe;
+
+
 }
 main .background{
     width: 100%;
     height: 600px;
-    background-image: url(https://accessibility.jiscinvolve.org/wp/files/2021/06/rami-al-zayat-w33-zg-dNL4-unsplash-scaled.jpg);
+    background-image: url(../img/backbround.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 3px;
+    
 }
 main>h3{
     text-align: center;
-    margin: 15px;
+    padding: 25px 0;
+    font: weight 700px; 
+    font-size: 18px;
+    background-color: rgb(240, 238, 246);
+    box-shadow: 0px 1px 5px 2px #f0e4fe;
+    border-radius: 3px;
+    color: #551A8B;
+    
 }
 main .phone{
     width: 300px;
@@ -113,6 +135,9 @@ main .phone{
     border-radius: 2px;
     display: inline-block;
     margin:20px;
+    box-shadow: 0px 1px 5px 2px #f0e4fe;
+    border-radius: 7px;
+    background-color: rgb(253, 253, 253);
 
 }
 main .phone .img{
@@ -123,4 +148,29 @@ main .phone .img{
 main .phone img{
     width: 100%;
     height: 200px;
+    border-radius: 7px;
+}
+main .phone h2{
+    color: #551A8B;
+    padding: 5px;
+}
+main .phone p{
+    padding: 5px;
+    font-family: cursive;
+    color: rgb(158, 158, 158);
+}
+main .phone button {
+    background-color:#551A8B ;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+main .phone button a{
+    color: rgb(162, 162, 162);
+}
+main .phone button a:hover{
+    color: blue;
+}
+main .phone input{
+    width: 40px;
 }
