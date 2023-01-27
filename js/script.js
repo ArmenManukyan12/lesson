@@ -35,6 +35,7 @@ const boxes = [{
         price: "220 $"
     }
 ]
+let total=0
 function addProduct(name, text, price, img) {
     const name_phone = document.createTextNode(name);
     const text_phone = document.createTextNode(text);
@@ -56,20 +57,20 @@ function addProduct(name, text, price, img) {
 
     newDiv.append(newIMG, newH2, newP, newSPAN, newButton,newInput);
     newInput.setAttribute("type","number")
-    newInput.setAttribute("min","0")
+    newInput.min="0"
     newDiv.className = "phone"
     newButton.textContent = "Buy"
     const currentDiv = document.getElementById("boxes");
     currentDiv.appendChild(newDiv);
+    
     let x = 1
-
     newButton.addEventListener("click", function () {
         if (x === 1) {
-            number.textContent++
+            number.textContent= total+= +newInput.value
             newButton.style.cssText = "background-color: rgb(9, 139, 9, 0.75)";
             x = 0;
         } else {
-            number.textContent--
+            number.textContent= total-= +newInput.value
             newButton.style.cssText = "";
             x = 1;
         }
@@ -79,6 +80,11 @@ function addProduct(name, text, price, img) {
 for (let i = 0; i < boxes.length; i++) {
     addProduct(boxes[i].name, boxes[i].text, boxes[i].price, boxes[i].img, boxes[i].button, boxes[i].input)
 }
+
+
+
+
+
 
 // let number = document.getElementById("number")
 // const btn = document.getElementsByClassName("btn")
